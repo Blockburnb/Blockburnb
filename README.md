@@ -3,7 +3,7 @@
 - 🏫 **Formation** : BUT Science des Données
 - 🎯 **Focus actuel** : Perfectionnement sur **Talend** et l'automatisation ETL
 - 🧠 **Profil** : Un parcours scientifique combiné à une approche autodidacte du développement
-
+-
 ---
 
 ## 🛠️ Stack Technique
