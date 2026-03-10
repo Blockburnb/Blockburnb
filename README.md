@@ -42,8 +42,8 @@
 ---
 
 ## 📈 Mes statistiques GitHub
-![Stats](https://github-readme-stats.vercel.app/api?username=TON_PSEUDO_ICI&show_icons=true&theme=radical)
-![Top Langages](https://github-readme-stats.vercel.app/api/top-langs/?username=TON_PSEUDO_ICI&layout=compact&theme=radical)
+![Stats](https://github-readme-stats.vercel.app/api?username=Blockburnb&show_icons=true&theme=radical)
+![Top Langages](https://github-readme-stats.vercel.app/api/top-langs/?username=Blockburnb&layout=compact&theme=radical)
 
 --- 
 *Dernière mise à jour : -- *
