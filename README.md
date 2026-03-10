@@ -44,6 +44,7 @@
 ## 📈 Mes statistiques GitHub
 ![Stats](https://github-readme-stats.vercel.app/api?username=Blockburnb&show_icons=true&theme=radical)
 ![Top Langages](https://github-readme-stats.vercel.app/api/top-langs/?username=Blockburnb&layout=compact&theme=radical)
+![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=Blockburnb&theme=radical)
 
 --- 
 *Dernière mise à jour : -- *
