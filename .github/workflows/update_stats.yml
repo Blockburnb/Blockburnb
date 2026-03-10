@@ -41,6 +41,13 @@ jobs:
           MARKER_START = "<!--START_SECTION:github-stats-->"
           MARKER_END = "<!--END_SECTION:github-stats-->"
 
+          ERROR_PATTERNS = [
+              "Error Fetching Resource",
+              "Couldn't resolve host",
+              "Something went wrong",
+              "This service is temporarily unavailable",
+          ]
+
           def check_url(url):
               try:
                   request = urllib.request.Request(
@@ -48,7 +55,13 @@ jobs:
                       headers={"User-Agent": "github-actions-stats-checker/1.0"},
                   )
                   with urllib.request.urlopen(request, timeout=10) as resp:
-                      return resp.getcode() == 200
+                      if resp.getcode() != 200:
+                          return False
+                      content = resp.read().decode("utf-8", errors="replace")
+                      return not any(
+                          pattern.lower() in content.lower()
+                          for pattern in ERROR_PATTERNS
+                      )
               except Exception:
                   return False
 
