@@ -18,9 +18,8 @@ jobs:
 
       - name: Update README date
         run: |
-          DATE=$(date +'%d %B %Y')
-          # Remplace uniquement la ligne de date en bas du README
-          sed -i "s|\*Dernière mise à jour : [^*]* \*|*Dernière mise à jour : ${DATE} *|" README.md
+          # Remplace uniquement la ligne de date de mise à jour
+          sed -i "s/Dernière mise à jour : .*/Dernière mise à jour : ${{ env.DATE }} */g" README.md
 
       - name: Commit and Push
         run: |

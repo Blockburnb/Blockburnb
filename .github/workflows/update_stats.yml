@@ -1,0 +1,88 @@
+name: Update GitHub Stats
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # Tous les jours à 6h UTC
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Check APIs and update stats section
+        run: |
+          python3 << 'EOF'
+          import urllib.request
+          import re
+
+          USERNAME = "Blockburnb"
+          THEME = "radical"
+
+          STATS = [
+              (
+                  "Stats",
+                  f"https://github-readme-stats.vercel.app/api?username={USERNAME}&show_icons=true&theme={THEME}"
+              ),
+              (
+                  "Top Langages",
+                  f"https://github-readme-stats.vercel.app/api/top-langs/?username={USERNAME}&layout=compact&theme={THEME}"
+              ),
+              (
+                  "Streak Stats",
+                  f"https://streak-stats.demolab.com/?user={USERNAME}&theme={THEME}"
+              ),
+          ]
+
+          MARKER_START = "<!--START_SECTION:github-stats-->"
+          MARKER_END = "<!--END_SECTION:github-stats-->"
+
+          def check_url(url):
+              try:
+                  request = urllib.request.Request(
+                      url,
+                      headers={"User-Agent": "github-actions-stats-checker/1.0"},
+                  )
+                  with urllib.request.urlopen(request, timeout=10) as resp:
+                      return resp.getcode() == 200
+              except Exception:
+                  return False
+
+          lines = []
+          for label, url in STATS:
+              if check_url(url):
+                  lines.append(f"![{label}]({url})")
+
+          content = "\n".join(lines)
+
+          with open("README.md", "r", encoding="utf-8") as f:
+              readme = f.read()
+
+          if MARKER_START not in readme or MARKER_END not in readme:
+              print("Markers not found in README.md — skipping update.")
+              exit(0)
+
+          new_readme = re.sub(
+              r"<!--START_SECTION:github-stats-->.*?<!--END_SECTION:github-stats-->",
+              f"{MARKER_START}\n{content}\n{MARKER_END}",
+              readme,
+              flags=re.DOTALL,
+          )
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(new_readme)
+
+          print(f"Stats section updated with {len(lines)} badge(s).")
+          EOF
+
+      - name: Commit and push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: update GitHub stats section" || exit 0
+          git push
