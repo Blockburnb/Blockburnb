@@ -18,9 +18,49 @@ jobs:
 
       - name: Update README date
         run: |
-          # Remplace uniquement la ligne de date de mise à jour
-          DATE=$(date -u +'%d/%m/%Y %H:%M UTC')
-          sed -i "s/Dernière mise à jour : .*/Dernière mise à jour : $DATE/g" README.md
+          python3 << 'EOF'
+          import datetime
+          import re
+
+          months = [
+            "Janvier",
+            "Février",
+            "Mars",
+            "Avril",
+            "Mai",
+            "Juin",
+            "Juillet",
+            "Août",
+            "Septembre",
+            "Octobre",
+            "Novembre",
+            "Décembre",
+          ]
+
+          now = datetime.datetime.now(datetime.UTC)
+          formatted = f"{now.day} {months[now.month - 1]} {now.year}"
+          new_line = f"Dernière mise à jour : {formatted}"
+
+          with open("README.md", "r", encoding="utf-8") as f:
+            content = f.read()
+
+          if re.search(r"^Dernière mise à jour\s*:\s*.*$", content, flags=re.MULTILINE):
+            content = re.sub(
+              r"^Dernière mise à jour\s*:\s*.*$",
+              new_line,
+              content,
+              flags=re.MULTILINE,
+            )
+          else:
+            if not content.endswith("\n"):
+              content += "\n"
+            content += f"{new_line}\n"
+
+          with open("README.md", "w", encoding="utf-8") as f:
+            f.write(content)
+
+          print(new_line)
+          EOF
 
       - name: Commit and Push
         run: |

@@ -43,9 +43,14 @@ jobs:
 
           ERROR_PATTERNS = [
               "Error Fetching Resource",
+              "An error occurred",
               "Couldn't resolve host",
               "Something went wrong",
               "This service is temporarily unavailable",
+              "Rate limit exceeded",
+              "Not Found",
+              "Bad Gateway",
+              "Forbidden",
           ]
 
           def check_url(url):
@@ -58,8 +63,14 @@ jobs:
                       if resp.getcode() != 200:
                           return False
                       content = resp.read().decode("utf-8", errors="replace")
+                      normalized = content.lower()
+
+                      # Les cartes valides renvoient du SVG ; tout autre format est traité comme une erreur.
+                      if "<svg" not in normalized or "</svg>" not in normalized:
+                          return False
+
                       return not any(
-                          pattern.lower() in content.lower()
+                          pattern.lower() in normalized
                           for pattern in ERROR_PATTERNS
                       )
               except Exception:

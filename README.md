@@ -3,7 +3,7 @@
 - 🏫 **Formation** : BUT Science des Données
 - 🎯 **Focus actuel** : Perfectionnement sur **Talend** et l'automatisation ETL
 - 🧠 **Profil** : Un parcours scientifique combiné à une approche autodidacte du développement
--
+
 ---
 
 ## 🛠️ Stack Technique
@@ -44,10 +44,8 @@
 ## 📈 Mes statistiques GitHub
 
 <!--START_SECTION:github-stats-->
-![Stats](https://github-readme-stats.vercel.app/api?username=Blockburnb&show_icons=true&theme=radical)
-![Top Langages](https://github-readme-stats.vercel.app/api/top-langs/?username=Blockburnb&layout=compact&theme=radical)
 ![Streak Stats](https://streak-stats.demolab.com/?user=Blockburnb&theme=radical)
 <!--END_SECTION:github-stats-->
 
 --- 
-Dernière mise à jour : 10/03/2026 09:48 UTC
+Dernière mise à jour : 10 Mars 2026
