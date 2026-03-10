@@ -1,8 +1,8 @@
 ## 🚀 En quelques mots...
 
-- [cite_start]🏫 **Formation** : BUT Science des Données [cite: 103, 105]
-- [cite_start]🎯 **Focus actuel** : Perfectionnement sur **Talend** et l'automatisation ETL [cite: 89, 94]
-- [cite_start]🧠 **Profil** : Un parcours scientifique combiné à une approche autodidacte du développement [cite: 88]
+- 🏫 **Formation** : BUT Science des Données
+- 🎯 **Focus actuel** : Perfectionnement sur **Talend** et l'automatisation ETL
+- 🧠 **Profil** : Un parcours scientifique combiné à une approche autodidacte du développement
 
 ---
 
@@ -22,7 +22,7 @@
 
 ### Infrastructure & Outils
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Git(https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Agile](https://img.shields.io/badge/Agile-Scrum-0052CC?style=for-the-badge)
 
 ---
@@ -30,14 +30,14 @@
 ## 📂 Projets Marquants
 
 ### 💼 Expériences Pro
-* [cite_start]**Data Governance Study** : Étude comparative de solutions de Data Catalog (OpenMetadata, Atlas, Dataplex, Talend)[cite: 97].
-* [cite_start]**Urbanisation SI** : Automatisation d'outils métiers internes pour la gestion des évolutions[cite: 93].
+* **Data Governance Study** : Étude comparative de solutions de Data Catalog (OpenMetadata, Atlas, Dataplex, Talend).
+* **Urbanisation SI** : Automatisation d'outils métiers internes pour la gestion des évolutions.
 
 ### 🧪 Projets Académiques & Persos
-* [cite_start]🏎️ [**F1 Dashboard**](https://github.com/Blockburnb/R5.VCOD.07_Programmation_web_pour_la_visualisation) : Dashboard complet (HTML/CSS/JS, PHP, Python, API)[cite: 109].
-* [cite_start]🤖 [**Bot de Trading & Scraping**](https://github.com/Blockburnb/iut_sd2_web_scraping) : Automatisation en Java avec Jsoup[cite: 110].
-* [cite_start]🏠 [**Visualisation DPE**](https://github.com/Blockburnb/iut_sd2_rshiny_enedis) : Analyse territoriale sous R & RShiny[cite: 107].
-* [cite_start]🌐 [**Multi-agents IA**](https://github.com/Blockburnb/The-Hive-Mind) : Orchestration de LLM et task routing[cite: 118].
+* 🏎️ [**F1 Dashboard**](https://github.com/Blockburnb/R5.VCOD.07_Programmation_web_pour_la_visualisation) : Dashboard complet (HTML/CSS/JS, PHP, Python, API).
+* 🤖 [**Bot de Trading & Scraping**](https://github.com/Blockburnb/iut_sd2_web_scraping) : Automatisation en Java avec Jsoup.
+* 🏠 [**Visualisation DPE**](https://github.com/Blockburnb/iut_sd2_rshiny_enedis) : Analyse territoriale sous R & RShiny.
+* 🌐 [**Multi-agents IA**](https://github.com/Blockburnb/The-Hive-Mind) : Orchestration de LLM et task routing.
 
 ---
 
