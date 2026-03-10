@@ -1,16 +1,49 @@
-## Hi there 👋
+## 🚀 En quelques mots...
 
-<!--
-**Blockburnb/Blockburnb** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+- [cite_start]🏫 **Formation** : BUT Science des Données [cite: 103, 105]
+- [cite_start]🎯 **Focus actuel** : Perfectionnement sur **Talend** et l'automatisation ETL [cite: 89, 94]
+- [cite_start]🧠 **Profil** : Un parcours scientifique combiné à une approche autodidacte du développement [cite: 88]
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🛠️ Stack Technique
+
+### Data & Business Intelligence
+![Talend](https://img.shields.io/badge/Talend-%23FF6D70.svg?style=for-the-badge&logo=Talend&logoColor=white) 
+![Pentaho](https://img.shields.io/badge/Pentaho-3290b3?style=for-the-badge&logo=pentaho&logoColor=white)
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+
+### Programmation & Web
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![VBA](https://img.shields.io/badge/VBA-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+
+### Infrastructure & Outils
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Agile](https://img.shields.io/badge/Agile-Scrum-0052CC?style=for-the-badge)
+
+---
+
+## 📂 Projets Marquants
+
+### 💼 Expériences Pro
+* [cite_start]**Data Governance Study** : Étude comparative de solutions de Data Catalog (OpenMetadata, Atlas, Dataplex, Talend)[cite: 97].
+* [cite_start]**Urbanisation SI** : Automatisation d'outils métiers internes pour la gestion des évolutions[cite: 93].
+
+### 🧪 Projets Académiques & Persos
+* [cite_start]🏎️ [**F1 Dashboard**](https://github.com/Blockburnb/R5.VCOD.07_Programmation_web_pour_la_visualisation) : Dashboard complet (HTML/CSS/JS, PHP, Python, API)[cite: 109].
+* [cite_start]🤖 [**Bot de Trading & Scraping**](https://github.com/Blockburnb/iut_sd2_web_scraping) : Automatisation en Java avec Jsoup[cite: 110].
+* [cite_start]🏠 [**Visualisation DPE**](https://github.com/Blockburnb/iut_sd2_rshiny_enedis) : Analyse territoriale sous R & RShiny[cite: 107].
+* [cite_start]🌐 [**Multi-agents IA**](https://github.com/Blockburnb/The-Hive-Mind) : Orchestration de LLM et task routing[cite: 118].
+
+---
+
+## 📈 Mes statistiques GitHub
+![Stats](https://github-readme-stats.vercel.app/api?username=TON_PSEUDO_ICI&show_icons=true&theme=radical)
+![Top Langages](https://github-readme-stats.vercel.app/api/top-langs/?username=TON_PSEUDO_ICI&layout=compact&theme=radical)
+
+--- 
+*Dernière mise à jour : -- *
