@@ -25,16 +25,16 @@ jobs:
 
           STATS = [
               (
+                  "Streak Stats",
+                  f"https://streak-stats.demolab.com/?user={USERNAME}&theme={THEME}"
+              ),
+              (
                   "Stats",
                   f"https://github-readme-stats.vercel.app/api?username={USERNAME}&show_icons=true&theme={THEME}"
               ),
               (
                   "Top Langages",
                   f"https://github-readme-stats.vercel.app/api/top-langs/?username={USERNAME}&layout=compact&theme={THEME}"
-              ),
-              (
-                  "Streak Stats",
-                  f"https://streak-stats.demolab.com/?user={USERNAME}&theme={THEME}"
               ),
           ]
 
@@ -81,7 +81,7 @@ jobs:
               if check_url(url):
                   lines.append(f"![{label}]({url})")
 
-          content = "\n".join(lines)
+          content = "\n\n".join(lines)
 
           with open("README.md", "r", encoding="utf-8") as f:
               readme = f.read()
