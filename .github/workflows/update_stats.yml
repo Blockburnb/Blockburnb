@@ -76,12 +76,18 @@ jobs:
               except Exception:
                   return False
 
+          SNAKE_BLOCK = """<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="output/github-contribution-grid-snake.svg" />
+  <img alt="Contribution grid snake animation" src="output/github-contribution-grid-snake.svg" />
+</picture>"""
+
           lines = []
           for label, url in STATS:
               if check_url(url):
                   lines.append(f"![{label}]({url})")
 
-          content = "\n\n".join(lines)
+          content = "\n\n".join(lines + [SNAKE_BLOCK])
 
           with open("README.md", "r", encoding="utf-8") as f:
               readme = f.read()
@@ -100,7 +106,7 @@ jobs:
           with open("README.md", "w", encoding="utf-8") as f:
               f.write(new_readme)
 
-          print(f"Stats section updated with {len(lines)} badge(s).")
+          print(f"Stats section updated with {len(lines)} badge(s) + snake animation.")
           EOF
 
       - name: Commit and push
